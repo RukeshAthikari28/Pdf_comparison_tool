@@ -1,31 +1,31 @@
-# Pdf_comparison_tool 
-A Streamlit app to compare two PDFs and highlight the differences.
+# 📄 PDF Comparison Tool
 
-## Features
-- Upload two PDF files
-- Extract text content
-- Highlight added (green), removed (red), and modified (yellow) text
-- Summary report of changes
-- Clean UI with Streamlit
+A Streamlit-based web application that allows users to upload and compare two PDF documents. The differences between the documents are highlighted in color:  
+🟢 **Added content** – Green  
+🔴 **Removed content** – Red  
+🟡 **Modified content** – Yellow
 
-## Installation
+---
 
-```bash
-git clone https://github.com/yourname/pdf-comparator.git
-cd pdf-comparator
-pip install -r requirements.txt
-```
+## 🚀 Features
 
-## Run the App
-```bash
-streamlit run app.py
-```
+- Upload two PDF documents
+- Extract and compare text content
+- Visualize differences with color-coded highlights
+- Generate a summary report of:
+  - Number of additions
+  - Number of deletions
+  - Number of modifications
+- Clean and user-friendly Streamlit interface
 
-## Folder Structure
-- `app.py`: Main Streamlit app
-- `utils/`: Utility modules for PDF handling and comparison
+---
 
-## Future Improvements
-- OCR for scanned PDFs
-- Use LLM to summarize content change
-- Handle large files efficiently
+## 🛠️ Tech Stack
+
+- **Frontend**: [Streamlit](https://streamlit.io/)
+- **Text Extraction**: PyMuPDF (fitz)
+- **Text Comparison**: Python’s `difflib`
+- **OCR Support** *(Future Scope)*: `pytesseract`, `pdfplumber`
+
+---
+
